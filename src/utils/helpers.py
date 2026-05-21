@@ -1,42 +1,48 @@
 """
 helpers.py
-----------
-Funciones de utilidad general del proyecto.
+==========
+Funciones auxiliares compartidas entre todos los módulos del proyecto.
+
+Curso: Inteligencia Artificial Aplicada — UAC 2026
 """
-from pathlib import Path
-import matplotlib.pyplot as plt
+
 import numpy as np
+import random
+import os
 
 
-def verificar_estructura():
-    """Verifica que la estructura de carpetas del proyecto esté completa."""
-    root = Path(__file__).resolve().parents[2]
-    carpetas = [
-        'data/raw', 'data/processed', 'data/samples',
-        'notebooks', 'src', 'reports/fase1', 'reports/fase2', 'reports/fase3',
-        'results/metrics', 'results/figures', 'results/models'
-    ]
-    print('📁 Verificando estructura del proyecto:')
-    for carpeta in carpetas:
-        ruta = root / carpeta
-        estado = '✅' if ruta.exists() else '❌'
-        print(f'   {estado} {carpeta}')
+def set_seed(seed: int = 42) -> None:
+    """
+    Fija las semillas aleatorias para reproducibilidad total del experimento.
+    Obligatorio en proyectos académicos reproducibles.
+    """
+    random.seed(seed)
+    np.random.seed(seed)
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    print(f"🌱 Semilla fijada: {seed}")
 
 
-def mostrar_muestra_imagenes(imagenes: list, titulos: list = None, cols: int = 3):
-    """Visualiza una grilla de imágenes."""
-    rows = (len(imagenes) + cols - 1) // cols
-    fig, axes = plt.subplots(rows, cols, figsize=(cols * 4, rows * 4))
-    axes = axes.flatten() if rows > 1 else [axes] if cols == 1 else axes
+def print_separator(title: str = "", char: str = "=", width: int = 60) -> None:
+    """Imprime un separador visual en consola."""
+    if title:
+        print(f"\n{char*width}")
+        print(f"  {title}")
+        print(f"{char*width}")
+    else:
+        print(char * width)
 
-    for i, (ax, img) in enumerate(zip(axes, imagenes)):
-        ax.imshow(img, cmap='gray' if img.ndim == 2 else None)
-        if titulos and i < len(titulos):
-            ax.set_title(titulos[i], fontsize=9)
-        ax.axis('off')
 
-    for ax in axes[len(imagenes):]:
-        ax.axis('off')
-
-    plt.tight_layout()
-    plt.show()
+def count_images_per_class(data_dir: str, classes: list) -> dict:
+    """Cuenta cuántas imágenes hay por clase en un directorio."""
+    from pathlib import Path
+    counts = {}
+    for cls in classes:
+        cls_dir = Path(data_dir) / cls
+        if cls_dir.exists():
+            imgs = list(cls_dir.glob("*.jpg")) + \
+                   list(cls_dir.glob("*.jpeg")) + \
+                   list(cls_dir.glob("*.png"))
+            counts[cls] = len(imgs)
+        else:
+            counts[cls] = 0
+    return counts
