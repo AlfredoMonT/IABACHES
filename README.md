@@ -105,8 +105,7 @@ pip install -r requirements.txt
 
 ### 3. Descargar el dataset
 ```bash
-# Configura tu API key de Kaggle primero (ver docs/kaggle_setup.md)
-python scripts/download_dataset.py
+python scripts/download_dataset.py o descargarlo de la sección de dataset.
 ```
 
 ### 4. Ejecutar el pipeline de Fase 1
