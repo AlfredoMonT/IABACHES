@@ -1,0 +1,68 @@
+# ============================================================
+# .gitignore — IABACHES
+# ============================================================
+
+# --- Datos (imágenes pesadas no se suben al repo) ---
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/processed/train/.gitkeep
+!data/processed/val/.gitkeep
+!data/processed/test/.gitkeep
+!data/processed/train/pothole/.gitkeep
+!data/processed/train/normal/.gitkeep
+!data/processed/val/pothole/.gitkeep
+!data/processed/val/normal/.gitkeep
+!data/processed/test/pothole/.gitkeep
+!data/processed/test/normal/.gitkeep
+
+# --- Modelos guardados pesados ---
+models/saved/*.pkl
+models/saved/*.h5
+models/saved/*.pt
+models/saved/*.pth
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# --- Entornos virtuales ---
+venv/
+env/
+.env
+.venv/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- Credenciales y configuración sensible ---
+.env
+kaggle.json
+*.key
+secrets.yaml
+
+# --- Sistema Operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Logs y temporales ---
+*.log
+tmp/
+temp/
