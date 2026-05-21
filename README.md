@@ -1,11 +1,11 @@
-# 🛣️ Sistema de Visión Computacional para la Detección Automatizada de Baches y Rejillas
+Sistema de Visión Computacional para la Detección Automatizada de Baches y Rejillas
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.4+-orange.svg)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Universidad Andina del Cusco](https://img.shields.io/badge/UAC-Ingeniería%20de%20Sistemas-red.svg)](https://uandina.edu.pe/)
 
-## 📌 Descripción
+##Descripción
 
 Proyecto integrador del curso **Inteligencia Artificial Aplicada** de la Escuela Profesional de Ingeniería de Sistemas de la **Universidad Andina del Cusco (UAC)**. El sistema desarrolla un pipeline de visión por computadora para detectar y clasificar automáticamente baches y anomalías viales en imágenes de infraestructura urbana, apoyando el mantenimiento preventivo de vías públicas en Cusco, Perú.
 
@@ -16,7 +16,7 @@ El proyecto se desarrolla en **3 fases progresivas**:
 
 ---
 
-## 👥 Equipo
+##Equipo
 
 | Nombre | Rol |
 |---|---|
@@ -90,7 +90,7 @@ IABACHES/
 
 ---
 
-## 🚀 Instalación y Uso
+##Instalación y Uso
 
 ### 1. Clonar el repositorio
 ```bash
@@ -121,7 +121,7 @@ jupyter notebook notebooks/fase1_exploracion_datos.ipynb
 
 ---
 
-## 📊 Dataset
+##Dataset
 
 - **Fuente:** [Pothole Detection Dataset: YOLOv11 Optimized](https://www.kaggle.com/datasets/muskanverma24/pothole-detection-dataset-yolov11-optimized) — Kaggle
 - **Total de imágenes:** 3,940
@@ -132,7 +132,7 @@ jupyter notebook notebooks/fase1_exploracion_datos.ipynb
 
 ---
 
-## 🧠 Fases del Proyecto
+##Fases del Proyecto
 
 ### ✅ Fase 1 — Clasificación con Random Forest (actual)
 - Preprocesamiento con OpenCV (resize, grayscale, CLAHE)
@@ -152,7 +152,7 @@ jupyter notebook notebooks/fase1_exploracion_datos.ipynb
 
 ---
 
-## 📈 Resultados Fase 1
+##Resultados Fase 1
 
 > _Resultados pendientes de experimentación. Se actualizarán al completar el entrenamiento._
 
@@ -162,7 +162,7 @@ jupyter notebook notebooks/fase1_exploracion_datos.ipynb
 
 ---
 
-## 🔬 Referencias
+##Referencias
 
 1. [Pothole Detection and Recognition based on Transfer Learning (arXiv, 2025)](https://arxiv.org/)
 2. [Road Surface Condition Detection with Machine Learning using DOT Cameras (arXiv, 2025)](https://arxiv.org/)
@@ -172,7 +172,7 @@ jupyter notebook notebooks/fase1_exploracion_datos.ipynb
 
 ---
 
-## 📄 Licencia
+##Licencia
 
 MIT License — ver archivo [LICENSE](LICENSE)
 
