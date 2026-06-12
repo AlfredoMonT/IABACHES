@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 opencv-python==4.9.0.80
 scikit-learn==1.4.2
 scikit-image==0.22.0
@@ -14,3 +15,50 @@ streamlit==1.35.0
 kaggle==1.6.14
 jupyter==1.0.0
 ipykernel==6.29.4
+=======
+# ============================================================
+# IABACHES — Detección de Baches con Visión Computacional
+# Universidad Andina del Cusco — Ingeniería de Sistemas
+# ============================================================
+
+# --- Core científico ---
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.0
+
+# --- Visión Computacional y Procesamiento de Imágenes ---
+opencv-python==4.9.0.80
+scikit-image==0.23.2
+Pillow==10.3.0
+
+# --- Machine Learning (Fase 1) ---
+scikit-learn==1.4.2
+joblib==1.4.2
+
+# --- Deep Learning (Fase 2) ---
+tensorflow==2.16.1
+# torch==2.3.0              # Alternativa PyTorch (descomentar si se usa)
+# torchvision==0.18.0
+
+# --- Detección de Objetos (Fase 3) ---
+ultralytics==8.2.0           # YOLOv11
+
+# --- Visualización ---
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.22.0
+
+# --- Notebooks ---
+jupyter==1.0.0
+ipykernel==6.29.4
+ipywidgets==8.1.2
+
+# --- Descarga de datasets ---
+kaggle==1.6.14
+gdown==5.2.0
+
+# --- Utilidades ---
+tqdm==4.66.4
+PyYAML==6.0.1
+python-dotenv==1.0.1
+>>>>>>> 0a4738871d3f5c6268a7eae1f539c02aa4e80d5b
