@@ -21,6 +21,7 @@ Sistema de vision computacional para la deteccion automatizada de baches y rejil
 - Fase 3: Deteccion de objetos con RT-DETR (Transformer)
 
 ---
+PESOS DE LA IA GUARDADAS EN UN DRIVE: https://drive.google.com/drive/folders/14iZ75H6saC5hThijrKzs8k5_6oX6GIYN?usp=drive_link
 
 ## Estructura del Repositorio
 
