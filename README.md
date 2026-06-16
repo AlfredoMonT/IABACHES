@@ -131,7 +131,6 @@ IABACHES/
 ├── requirements.txt             # Dependencias del proyecto
 ├── .gitignore                   # Archivos y carpetas ignorados por Git
 └── README.md                    # Este archivo
->>>>>>> 0a4738871d3f5c6268a7eae1f539c02aa4e80d5b
 ```
 
 ---
